@@ -3,474 +3,488 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Cleanse</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <title>Cleanse – Privacy Policy</title>
   <style>
-    :root {
-      --cobalt: #1B3FC4;
-      --cobalt-soft: #2B4FD4;
-      --cobalt-pale: #EEF1FB;
-      --ink: #0D0D14;
-      --ink-muted: #4A4A5A;
-      --ink-faint: #8A8A9A;
-      --rule: #E4E4EE;
-      --surface: #FAFAFA;
-      --white: #FFFFFF;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      background: var(--surface);
-      color: var(--ink);
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f6fb;
+      color: #1e293b;
+      line-height: 1.7;
     }
 
-    /* ── Header ── */
     header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(250, 250, 250, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .header-inner {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 20px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-
-    .logo-mark {
-      width: 30px;
-      height: 30px;
-      background: var(--cobalt);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .logo-mark svg { display: block; }
-
-    .logo-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-      font-size: 20px;
-      letter-spacing: 0.04em;
-      color: var(--ink);
-    }
-
-    .header-label {
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-    }
-
-    /* ── Hero ── */
-    .hero {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 72px 32px 56px;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--cobalt);
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
-      font-size: clamp(40px, 6vw, 58px);
-      line-height: 1.1;
-      letter-spacing: -0.01em;
-      color: var(--ink);
-      margin-bottom: 20px;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      color: var(--cobalt);
-    }
-
-    .hero-meta {
-      display: flex;
-      gap: 32px;
-      flex-wrap: wrap;
-    }
-
-    .meta-item {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .meta-label {
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-    }
-
-    .meta-value {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--ink-muted);
-    }
-
-    /* ── Nav ── */
-    .toc {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 32px;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .toc-label {
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-      margin-bottom: 16px;
-    }
-
-    .toc-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      list-style: none;
-    }
-
-    .toc-list a {
-      display: inline-block;
-      padding: 6px 14px;
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--cobalt);
-      background: var(--cobalt-pale);
-      border-radius: 100px;
-      text-decoration: none;
-      transition: background 0.15s, color 0.15s;
-    }
-
-    .toc-list a:hover {
-      background: var(--cobalt);
-      color: var(--white);
-    }
-
-    /* ── Content ── */
-    .content {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 0 32px 80px;
-    }
-
-    .section {
-      padding: 56px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    .section:last-child { border-bottom: none; }
-
-    .section-number {
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--ink-faint);
-      margin-bottom: 10px;
-    }
-
-    .section h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 400;
-      font-size: clamp(22px, 3vw, 28px);
-      line-height: 1.2;
-      color: var(--ink);
-      margin-bottom: 24px;
-    }
-
-    .section p {
-      font-size: 15px;
-      color: var(--ink-muted);
-      margin-bottom: 16px;
-      font-weight: 300;
-    }
-
-    .section p:last-child { margin-bottom: 0; }
-
-    .section ul {
-      list-style: none;
-      margin: 0 0 16px 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .section ul li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 15px;
-      color: var(--ink-muted);
-      font-weight: 300;
-    }
-
-    .section ul li::before {
-      content: '';
-      flex-shrink: 0;
-      margin-top: 8px;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--cobalt);
-    }
-
-    .callout {
-      background: var(--cobalt-pale);
-      border-left: 3px solid var(--cobalt);
-      border-radius: 0 8px 8px 0;
-      padding: 16px 20px;
-      margin: 24px 0;
-    }
-
-    .callout p {
-      font-size: 14px;
-      color: var(--cobalt-soft);
-      margin: 0;
-      font-weight: 400;
-    }
-
-    /* ── Contact Card ── */
-    .contact-card {
-      background: var(--white);
-      border: 1px solid var(--rule);
-      border-radius: 12px;
-      padding: 28px;
-      margin-top: 24px;
-    }
-
-    .contact-card p {
-      font-size: 14px;
-      color: var(--ink-muted);
-      margin-bottom: 8px;
-    }
-
-    .contact-card a {
-      color: var(--cobalt);
-      text-decoration: none;
-      font-weight: 400;
-    }
-
-    .contact-card a:hover { text-decoration: underline; }
-
-    /* ── Footer ── */
-    footer {
-      border-top: 1px solid var(--rule);
-      padding: 32px;
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #fff;
+      padding: 48px 24px 36px;
       text-align: center;
     }
 
-    footer p {
-      font-size: 12px;
-      color: var(--ink-faint);
-      letter-spacing: 0.04em;
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; opacity: 0.85; font-size: 0.95rem; }
+
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 16px 60px;
     }
 
-    @media (max-width: 600px) {
-      .header-inner, .hero, .toc, .content { padding-left: 20px; padding-right: 20px; }
-      .hero { padding-top: 48px; padding-bottom: 40px; }
+    .meta {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    section h2 .icon {
+      width: 28px; height: 28px;
+      background: #eff6ff;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    section p, section ul {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section ul li {
+      padding: 6px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      padding-bottom: 32px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="header-inner">
-      <a class="logo" href="#">
-        <div class="logo-mark">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 2C5.8 2 4 3.8 4 6c0 1.5.8 2.8 2 3.5V13h4v-3.5C11.2 8.8 12 7.5 12 6c0-2.2-1.8-4-4-4z" fill="white" opacity="0.9"/>
-            <rect x="6" y="13" width="4" height="1.5" rx="0.75" fill="white" opacity="0.6"/>
-          </svg>
-        </div>
-        <span class="logo-name">Cleanse</span>
-      </a>
-      <span class="header-label">Legal</span>
-    </div>
-  </header>
+<header>
+  <h1>🧹 Cleanse</h1>
+  <p>Privacy Policy</p>
+</header>
 
-  <div class="hero">
-    <span class="hero-eyebrow">Legal Document</span>
-    <h1>Privacy <em>Policy</em></h1>
-    <div class="hero-meta">
-      <div class="meta-item">
-        <span class="meta-label">Effective</span>
-        <span class="meta-value">January 1, 2025</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Last Updated</span>
-        <span class="meta-value">March 2025</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Applies to</span>
-        <span class="meta-value">Cleanse — Android App</span>
-      </div>
-    </div>
-  </div>
+<main>
+  <p class="meta">Last updated: June 2026</p>
 
-  <div class="toc">
-    <p class="toc-label">Contents</p>
-    <ul class="toc-list">
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#data-collected">Data Collected</a></li>
-      <li><a href="#permissions">Permissions</a></li>
-      <li><a href="#data-use">How We Use Data</a></li>
-      <li><a href="#third-parties">Third Parties</a></li>
-      <li><a href="#storage">Data Storage</a></li>
-      <li><a href="#children">Children</a></li>
-      <li><a href="#rights">Your Rights</a></li>
-      <li><a href="#changes">Changes</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <section>
+    <h2><span class="icon">📋</span> Overview</h2>
+    <p>
+      Cleanse ("the App") is a free Android utility that helps you reclaim storage space and organize
+      your contacts. We are committed to protecting your privacy. This policy explains what data the
+      App accesses, why, and how it is handled.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📂</span> Data We Access</h2>
+    <ul>
+      <li>
+        <strong>Storage files</strong> — The App reads file metadata (name, size, last-modified date)
+        in your Downloads folder and app cache directories to identify junk files.
+        It does <em>not</em> read file contents.
+      </li>
+      <li>
+        <strong>Contacts</strong> — The App reads your device contacts to detect duplicates,
+        incomplete entries, and formatting issues, and to export them to a vCard at your request.
+        Contact data is never uploaded or shared.
+      </li>
+      <li>
+        <strong>Photos</strong> — When you use Photo Finder or the Compressor, the App reads images
+        from your gallery to find duplicates, blurry/low-quality shots, or to re-encode large photos.
+        Photos are processed on-device and never uploaded.
+      </li>
+      <li>
+        <strong>Installed apps</strong> — The App lists your launcher apps (for App Manager and App Lock)
+        and reads their sizes. This list is not transmitted anywhere.
+      </li>
+      <li>
+        <strong>Foreground app name (App Lock only)</strong> — When App Lock is enabled, an Accessibility
+        service reads the package name of the app currently in the foreground so it can show the lock
+        screen over locked apps. See the App Lock section below.
+      </li>
+      <li>
+        <strong>Device statistics</strong> — Aggregate storage totals (used/free bytes), RAM, and battery
+        stats are read via Android APIs to display gauges. These are not stored or shared.
+      </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="content">
+  <section>
+    <h2><span class="icon">🔒</span> App Lock &amp; Accessibility</h2>
+    <p>
+      The App Lock feature is optional and off by default. When you enable it and grant the required
+      permissions, Cleanse uses an <strong>Accessibility service</strong> for a single purpose: to detect
+      <em>which app is in the foreground</em> so it can show a PIN/fingerprint lock over the apps you chose
+      to lock.
+    </p>
+    <ul style="margin-top:10px;">
+      <li>The service reads <strong>only the foreground app's package name</strong>. It does
+        <em>not</em> read, log, or transmit screen contents (<code>canRetrieveWindowContent</code> is disabled).</li>
+      <li>Your PIN is stored on your device only as a salted PBKDF2 hash — never in plain text and never uploaded.</li>
+      <li>Fingerprint matching is performed entirely by the Android system; Cleanse never receives your biometric data.</li>
+      <li>The lock screen is shown as a secure overlay; it cannot be screenshotted or screen-recorded.</li>
+      <li>None of this information leaves your device.</li>
+    </ul>
+  </section>
 
-    <div class="section" id="overview">
-      <p class="section-number">01</p>
-      <h2>Overview</h2>
-      <p>Cleanse ("we", "our", or "us") is a storage optimization and device management application for Android. We are committed to protecting your privacy and being transparent about how the app operates on your device.</p>
-      <p>This Privacy Policy explains what information Cleanse accesses, how it is used, and your rights regarding that information. By using Cleanse, you agree to the practices described in this policy.</p>
-      <div class="callout">
-        <p><strong>Core principle:</strong> Cleanse is designed to work entirely on your device. We do not collect, transmit, or sell your personal data to any third party.</p>
-      </div>
-    </div>
+  <section>
+    <h2><span class="icon">🚫</span> Data We Do NOT Collect</h2>
+    <p>
+      Cleanse does <strong>not</strong> collect, store, transmit, or share any personal information.
+      All scanning, merging, locking, and other processing happens entirely on your device. The App has
+      no backend server. Its only network use is fetching the user-interface font from Google's
+      downloadable-fonts provider on first launch — this sends no personal data, and the App falls back to
+      a system font offline. There are no ads and no analytics SDKs.
+    </p>
+  </section>
 
-    <div class="section" id="data-collected">
-      <p class="section-number">02</p>
-      <h2>Information We Collect</h2>
-      <p>Cleanse accesses the following categories of information solely to provide its core functionality on your device:</p>
-      <ul>
-        <li>Storage usage data — file sizes, directory paths, and cache locations — used to identify junk files and calculate storage savings.</li>
-        <li>Contact metadata — names, phone numbers, and email addresses — used solely within the app to identify duplicate or incomplete contacts for your review.</li>
-        <li>App usage information — installed app sizes and cache data — used to surface optimization opportunities.</li>
-      </ul>
-      <p>All processing happens locally on your device. No personal information is uploaded to external servers.</p>
-    </div>
+  <section>
+    <h2><span class="icon">🔑</span> Permissions Used</h2>
+    <ul>
+      <li><strong>READ_CONTACTS / WRITE_CONTACTS</strong> — to scan, merge, fix, and export contacts at your request.</li>
+      <li><strong>READ_EXTERNAL_STORAGE</strong> (Android ≤ 12) / <strong>MANAGE_EXTERNAL_STORAGE</strong> (Android 11+) — to scan Downloads and app-cache folders for junk.</li>
+      <li><strong>READ_MEDIA_IMAGES</strong> — to find duplicate/low-quality photos and compress images.</li>
+      <li><strong>POST_NOTIFICATIONS</strong> (Android 13+) — for auto-clean, storage-alert, and duplicate-scan notifications.</li>
+      <li><strong>PACKAGE_USAGE_STATS</strong> (optional, "Usage access") — to show exact per-app sizes in App Manager.</li>
+      <li><strong>REQUEST_DELETE_PACKAGES</strong> — to launch the system uninstall dialog from App Manager.</li>
+      <li><strong>KILL_BACKGROUND_PROCESSES</strong> — for the RAM Booster to stop background processes.</li>
+      <li><strong>USE_BIOMETRIC</strong> — for fingerprint unlock in App Lock.</li>
+      <li><strong>SYSTEM_ALERT_WINDOW</strong> ("Display over other apps") — to show the App Lock screen over locked apps.</li>
+      <li><strong>Accessibility service (BIND_ACCESSIBILITY_SERVICE)</strong> — used only by App Lock to detect the foreground app's package name; it does not read screen content.</li>
+      <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to re-apply your scheduled auto-clean after a reboot.</li>
+      <li><strong>INTERNET</strong> — only to download the user-interface font (no personal data is sent).</li>
+    </ul>
+    <p style="margin-top:10px;">
+      Special permissions (all-files access, usage access, display-over-other-apps, and the Accessibility
+      service) are optional and only requested when you enable the feature that needs them. You can revoke
+      any of them at any time in Android Settings.
+    </p>
+  </section>
 
-    <div class="section" id="permissions">
-      <p class="section-number">03</p>
-      <h2>Device Permissions</h2>
-      <p>Cleanse may request the following Android permissions to deliver its features:</p>
-      <ul>
-        <li><strong>READ_EXTERNAL_STORAGE / MANAGE_EXTERNAL_STORAGE</strong> — to scan and display storage usage information.</li>
-        <li><strong>WRITE_EXTERNAL_STORAGE</strong> — to delete identified junk and cache files upon your explicit confirmation.</li>
-        <li><strong>READ_CONTACTS / WRITE_CONTACTS</strong> — to analyze, display, and (with your approval) remove duplicate or incomplete contacts.</li>
-        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — (Pro plan only) to enable automatic background cleaning when your device starts.</li>
-        <li><strong>FOREGROUND_SERVICE</strong> — to run background cleaning tasks with a visible notification, as required by Android.</li>
-        <li><strong>INTERNET</strong> — to process in-app subscription purchases via Google Play Billing.</li>
-      </ul>
-      <p>You can revoke any permission at any time through your device's Settings → Apps → Cleanse → Permissions.</p>
-    </div>
+  <section>
+    <h2><span class="icon">🗑️</span> Data Deletion</h2>
+    <p>
+      Because the App does not collect any data, there is nothing to delete on our end.
+      Uninstalling the App removes all App preferences stored locally on your device.
+    </p>
+  </section>
 
-    <div class="section" id="data-use">
-      <p class="section-number">04</p>
-      <h2>How We Use Information</h2>
-      <p>Information accessed by Cleanse is used exclusively for the following purposes:</p>
-      <ul>
-        <li>To display storage analytics and identify files eligible for deletion.</li>
-        <li>To detect duplicate or low-quality contacts and present them for your review.</li>
-        <li>To execute cleaning operations you explicitly initiate or schedule.</li>
-        <li>To calculate and display storage space recovered.</li>
-      </ul>
-      <p>We do not use your information for advertising, profiling, analytics reporting, or any purpose beyond the in-app functionality described above.</p>
-    </div>
+  <section>
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      The App does not knowingly collect information from children under 13.
+      It contains no ads, no analytics SDK, and no online services.
+    </p>
+  </section>
 
-    <div class="section" id="third-parties">
-      <p class="section-number">05</p>
-      <h2>Third-Party Services</h2>
-      <p>Cleanse integrates with the following third-party services, each with their own privacy practices:</p>
-      <ul>
-        <li><strong>Google Play Billing</strong> — handles subscription and purchase transactions. We do not receive or store your payment details. See Google's privacy policy at policies.google.com/privacy.</li>
-      </ul>
-      <p>No advertising SDKs, analytics frameworks, or data brokers are integrated into Cleanse. Your usage data is never shared with, sold to, or licensed by any third party.</p>
-    </div>
+  <section>
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      If this policy changes, the updated version will be published on this page and noted in the
+      Play Store listing. Continued use of the App after any update constitutes acceptance of
+      the revised policy.
+    </p>
+  </section>
 
-    <div class="section" id="storage">
-      <p class="section-number">06</p>
-      <h2>Data Storage &amp; Security</h2>
-      <p>All data accessed by Cleanse remains on your device. We do not operate remote servers that store user data. Subscription status is managed securely by Google Play and verified through standard Play Billing APIs.</p>
-      <p>App preferences and settings are stored locally in Android's standard SharedPreferences storage, which is private to the app and inaccessible to other applications.</p>
-    </div>
+  <section>
+    <h2><span class="icon">✉️</span> Contact</h2>
+    <p>
+      If you have questions about this privacy policy, please contact us through the
+      Play Store developer page.
+    </p>
+  </section>
+</main>
 
-    <div class="section" id="children">
-      <p class="section-number">07</p>
-      <h2>Children's Privacy</h2>
-      <p>Cleanse is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has used the app in a way that raises privacy concerns, please contact us and we will take appropriate action.</p>
-    </div>
+<footer>
+  &copy; 2026 Cleanse. All rights reserved.
+</footer>
 
-    <div class="section" id="rights">
-      <p class="section-number">08</p>
-      <h2>Your Rights</h2>
-      <p>Since Cleanse does not transmit or store your data on external servers, there is no user data held by us to access, export, or delete remotely.</p>
-      <p>You may exercise control over your data directly on your device:</p>
-      <ul>
-        <li>Revoke permissions via Android Settings at any time.</li>
-        <li>Uninstalling Cleanse removes all locally stored app preferences immediately.</li>
-        <li>Contact Google Play to manage or cancel subscription billing information.</li>
-      </ul>
-    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleanse – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <div class="section" id="changes">
-      <p class="section-number">09</p>
-      <h2>Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time to reflect changes in the app or applicable law. When we do, we will update the "Last Updated" date at the top of this page. Continued use of Cleanse after any changes constitutes acceptance of the updated policy.</p>
-      <p>For significant changes, we will provide notice within the app.</p>
-    </div>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f6fb;
+      color: #1e293b;
+      line-height: 1.7;
+    }
 
-    <div class="section" id="contact">
-      <p class="section-number">10</p>
-      <h2>Contact Us</h2>
-      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or Cleanse's data practices, please reach out:</p>
-      <div class="contact-card">
-        <p><strong>App:</strong> Cleanse — Storage Optimizer</p>
-        <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#4737352e3126243e07223f262a372b226924282a"><span class="__cf_email__" data-cfemail="88f8fae1fee9ebf1c8edf0e9e5f8e4eda6ebe7e5">[email&#160;protected]</span></a></p>
-        <p><strong>Developer:</strong> <a href="https://monajim.github.io/portfolio/" target="_blank" rel="noopener noreferrer">monajim.github.io/portfolio</a></p>
-        <p style="margin-top:12px; font-size:13px; color: var(--ink-faint);">We aim to respond to all privacy inquiries within 5 business days.</p>
-      </div>
-    </div>
+    header {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      color: #fff;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
 
-  </div>
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; opacity: 0.85; font-size: 0.95rem; }
 
-  <footer>
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 16px 60px;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    section h2 .icon {
+      width: 28px; height: 28px;
+      background: #eff6ff;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    section p, section ul {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section ul li {
+      padding: 6px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      padding-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧹 Cleanse</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+  <p class="meta">Last updated: June 2026</p>
+
+  <section>
+    <h2><span class="icon">📋</span> Overview</h2>
+    <p>
+      Cleanse ("the App") is a free Android utility that helps you reclaim storage space and organize
+      your contacts. We are committed to protecting your privacy. This policy explains what data the
+      App accesses, why, and how it is handled.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📂</span> Data We Access</h2>
+    <ul>
+      <li>
+        <strong>Storage files</strong> — The App reads file metadata (name, size, last-modified date)
+        in your Downloads folder and app cache directories to identify junk files.
+        It does <em>not</em> read file contents.
+      </li>
+      <li>
+        <strong>Contacts</strong> — The App reads your device contacts to detect duplicates,
+        incomplete entries, and formatting issues, and to export them to a vCard at your request.
+        Contact data is never uploaded or shared.
+      </li>
+      <li>
+        <strong>Photos</strong> — When you use Photo Finder or the Compressor, the App reads images
+        from your gallery to find duplicates, blurry/low-quality shots, or to re-encode large photos.
+        Photos are processed on-device and never uploaded.
+      </li>
+      <li>
+        <strong>Installed apps</strong> — The App lists your launcher apps (for App Manager and App Lock)
+        and reads their sizes. This list is not transmitted anywhere.
+      </li>
+      <li>
+        <strong>Foreground app name (App Lock only)</strong> — When App Lock is enabled, an Accessibility
+        service reads the package name of the app currently in the foreground so it can show the lock
+        screen over locked apps. See the App Lock section below.
+      </li>
+      <li>
+        <strong>Device statistics</strong> — Aggregate storage totals (used/free bytes), RAM, and battery
+        stats are read via Android APIs to display gauges. These are not stored or shared.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> App Lock &amp; Accessibility</h2>
+    <p>
+      The App Lock feature is optional and off by default. When you enable it and grant the required
+      permissions, Cleanse uses an <strong>Accessibility service</strong> for a single purpose: to detect
+      <em>which app is in the foreground</em> so it can show a PIN/fingerprint lock over the apps you chose
+      to lock.
+    </p>
+    <ul style="margin-top:10px;">
+      <li>The service reads <strong>only the foreground app's package name</strong>. It does
+        <em>not</em> read, log, or transmit screen contents (<code>canRetrieveWindowContent</code> is disabled).</li>
+      <li>Your PIN is stored on your device only as a salted PBKDF2 hash — never in plain text and never uploaded.</li>
+      <li>Fingerprint matching is performed entirely by the Android system; Cleanse never receives your biometric data.</li>
+      <li>The lock screen is shown as a secure overlay; it cannot be screenshotted or screen-recorded.</li>
+      <li>None of this information leaves your device.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🚫</span> Data We Do NOT Collect</h2>
+    <p>
+      Cleanse does <strong>not</strong> collect, store, transmit, or share any personal information.
+      All scanning, merging, locking, and other processing happens entirely on your device. The App has
+      no backend server. Its only network use is fetching the user-interface font from Google's
+      downloadable-fonts provider on first launch — this sends no personal data, and the App falls back to
+      a system font offline. There are no ads and no analytics SDKs.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔑</span> Permissions Used</h2>
+    <ul>
+      <li><strong>READ_CONTACTS / WRITE_CONTACTS</strong> — to scan, merge, fix, and export contacts at your request.</li>
+      <li><strong>READ_EXTERNAL_STORAGE</strong> (Android ≤ 12) / <strong>MANAGE_EXTERNAL_STORAGE</strong> (Android 11+) — to scan Downloads and app-cache folders for junk.</li>
+      <li><strong>READ_MEDIA_IMAGES</strong> — to find duplicate/low-quality photos and compress images.</li>
+      <li><strong>POST_NOTIFICATIONS</strong> (Android 13+) — for auto-clean, storage-alert, and duplicate-scan notifications.</li>
+      <li><strong>PACKAGE_USAGE_STATS</strong> (optional, "Usage access") — to show exact per-app sizes in App Manager.</li>
+      <li><strong>REQUEST_DELETE_PACKAGES</strong> — to launch the system uninstall dialog from App Manager.</li>
+      <li><strong>KILL_BACKGROUND_PROCESSES</strong> — for the RAM Booster to stop background processes.</li>
+      <li><strong>USE_BIOMETRIC</strong> — for fingerprint unlock in App Lock.</li>
+      <li><strong>SYSTEM_ALERT_WINDOW</strong> ("Display over other apps") — to show the App Lock screen over locked apps.</li>
+      <li><strong>Accessibility service (BIND_ACCESSIBILITY_SERVICE)</strong> — used only by App Lock to detect the foreground app's package name; it does not read screen content.</li>
+      <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to re-apply your scheduled auto-clean after a reboot.</li>
+      <li><strong>INTERNET</strong> — only to download the user-interface font (no personal data is sent).</li>
+    </ul>
+    <p style="margin-top:10px;">
+      Special permissions (all-files access, usage access, display-over-other-apps, and the Accessibility
+      service) are optional and only requested when you enable the feature that needs them. You can revoke
+      any of them at any time in Android Settings.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🗑️</span> Data Deletion</h2>
+    <p>
+      Because the App does not collect any data, there is nothing to delete on our end.
+      Uninstalling the App removes all App preferences stored locally on your device.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      The App does not knowingly collect information from children under 13.
+      It contains no ads, no analytics SDK, and no online services.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>
+      If this policy changes, the updated version will be published on this page and noted in the
+      Play Store listing. Continued use of the App after any update constitutes acceptance of
+      the revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✉️</span> Contact</h2>
+    <p>
+      If you have questions about this privacy policy, please contact us through the
+      Play Store developer page.
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Cleanse. All rights reserved.
+</footer>
+
+</body>
+</html>
