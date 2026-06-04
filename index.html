@@ -106,7 +106,7 @@
 </header>
 
 <main>
-  <p class="meta">Last updated: June 2026</p>
+  <p class="meta">Last updated: June 2026 · v1.5 (advertising update)</p>
 
   <section>
     <h2><span class="icon">📋</span> Overview</h2>
@@ -148,6 +148,11 @@
         <strong>Device statistics</strong> — Aggregate storage totals (used/free bytes), RAM, and battery
         stats are read via Android APIs to display gauges. These are not stored or shared.
       </li>
+      <li>
+        <strong>Advertising identifiers</strong> — The App displays ads through Google AdMob. To serve and
+        measure ads, AdMob and its partners may access your device's advertising ID, IP address, and general
+        device information. See the <strong>Advertising</strong> section below for details and your choices.
+      </li>
     </ul>
   </section>
 
@@ -170,13 +175,58 @@
   </section>
 
   <section>
-    <h2><span class="icon">🚫</span> Data We Do NOT Collect</h2>
+    <h2><span class="icon">🚫</span> What Cleanse Itself Does NOT Collect</h2>
     <p>
-      Cleanse does <strong>not</strong> collect, store, transmit, or share any personal information.
-      All scanning, merging, locking, and other processing happens entirely on your device. The App has
-      no backend server. Its only network use is fetching the user-interface font from Google's
-      downloadable-fonts provider on first launch — this sends no personal data, and the App falls back to
-      a system font offline. There are no ads and no analytics SDKs.
+      Cleanse has <strong>no backend server of its own</strong> and does <strong>not</strong> upload,
+      store, or share the contents of your files, contacts, photos, or messages. All scanning, merging,
+      compressing, and locking happens entirely on your device. We — the developer — do not receive,
+      see, or sell any of your personal content.
+    </p>
+    <p style="margin-top:10px;">
+      The one exception to "stays on your device" is advertising, which is provided by a third party
+      (Google AdMob) and is described in the next section. Aside from ads, the App's only other network
+      use is fetching the user-interface font from Google's downloadable-fonts provider on first launch,
+      which sends no personal data and falls back to a system font offline.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📢</span> Advertising &amp; Analytics</h2>
+    <p>
+      Cleanse is free and supported by ads. The App displays banner and interstitial ads through
+      <strong>Google AdMob</strong>. To deliver and measure these ads, AdMob and its advertising
+      partners may collect and process certain information, including:
+    </p>
+    <ul style="margin-top:10px;">
+      <li>your device's <strong>advertising ID</strong> (a resettable identifier) and general device information;</li>
+      <li>your <strong>IP address</strong> and approximate (coarse) location derived from it;</li>
+      <li>ad interaction data, such as which ads were shown and whether they were tapped.</li>
+    </ul>
+    <p style="margin-top:10px;">
+      This data is handled by Google under its own privacy policy. We do not control and do not receive
+      this raw data ourselves; we receive only aggregate, non-identifying performance reports. To learn
+      how Google uses data from apps that use its services, see
+      <strong>https://policies.google.com/technologies/partner-sites</strong>.
+    </p>
+    <p style="margin-top:10px;">
+      You can limit ad personalization at any time by resetting or deleting your advertising ID in
+      <em>Android Settings → Privacy → Ads</em>. Cleanse contains <strong>no other analytics SDKs</strong>
+      beyond what AdMob uses to serve and measure ads.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> Consent (EEA, UK &amp; Switzerland)</h2>
+    <p>
+      If you are in the European Economic Area, the United Kingdom, or Switzerland, Cleanse shows a
+      <strong>consent message</strong> (via Google's certified User Messaging Platform) the first time you
+      open the App, before any personalized ads are loaded. You can choose to accept personalized ads,
+      or to receive only non-personalized ads.
+    </p>
+    <p style="margin-top:10px;">
+      You can change your choice at any time from <em>Tools → Privacy &amp; consent</em> inside the App.
+      Non-personalized ads still use limited data (such as coarse, IP-based location and the ad context)
+      to function and to prevent fraud, but are not based on a profile of your interests.
     </p>
   </section>
 
@@ -194,7 +244,8 @@
       <li><strong>SYSTEM_ALERT_WINDOW</strong> ("Display over other apps") — to show the App Lock screen over locked apps.</li>
       <li><strong>Accessibility service (BIND_ACCESSIBILITY_SERVICE)</strong> — used only by App Lock to detect the foreground app's package name; it does not read screen content.</li>
       <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to re-apply your scheduled auto-clean after a reboot.</li>
-      <li><strong>INTERNET</strong> — only to download the user-interface font (no personal data is sent).</li>
+      <li><strong>INTERNET / ACCESS_NETWORK_STATE</strong> — to download the user-interface font and to load and measure ads via Google AdMob.</li>
+      <li><strong>AD_ID (com.google.android.gms.permission.AD_ID)</strong> — allows AdMob to access the device advertising ID for ad delivery and measurement.</li>
     </ul>
     <p style="margin-top:10px;">
       Special permissions (all-files access, usage access, display-over-other-apps, and the Accessibility
@@ -206,16 +257,21 @@
   <section>
     <h2><span class="icon">🗑️</span> Data Deletion</h2>
     <p>
-      Because the App does not collect any data, there is nothing to delete on our end.
-      Uninstalling the App removes all App preferences stored locally on your device.
+      Cleanse keeps your personal content on your device, so there is nothing for us to delete on our end.
+      Uninstalling the App removes all App preferences stored locally on your device. To remove or reset the
+      advertising identifier used for ads, reset or delete your advertising ID in
+      <em>Android Settings → Privacy → Ads</em>, and see Google's policy for how to manage data Google holds.
     </p>
   </section>
 
   <section>
     <h2><span class="icon">👶</span> Children's Privacy</h2>
     <p>
-      The App does not knowingly collect information from children under 13.
-      It contains no ads, no analytics SDK, and no online services.
+      Cleanse is a general-audience utility and is not directed at children under 13. The App displays ads
+      via Google AdMob, which uses an advertising identifier; because of this, the App is not intended for
+      children and should not be the primary tool of a child user. We do not knowingly collect personal
+      information from children. If you believe a child has used the App, reset the device advertising ID
+      as described above.
     </p>
   </section>
 
